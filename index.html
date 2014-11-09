@@ -98,25 +98,10 @@ img{
 
 </style>
 
-<script type="text/javascript">
-function vote () {
-  document.getElementById("donate").style.display = "none";
-  document.getElementById("vote").style.display = "inline";
-  $("#voteli").addClass("active");
-  $("#donateli").removeClass("active");
-}
-
-function donate () {
-  document.getElementById("vote").style.display = "none";
-  document.getElementById("donate").style.display = "inline";
-  $("#voteli").removeClass("active");
-  $("#donateli").addClass("active");
-}
-</script>
-
 </head>
 
 <body>
+  
   <br/>
 
   <div class="navbar navbar-fixed-top" role="navigation">
@@ -160,14 +145,15 @@ function donate () {
         </ul>
         <ul class="social-icons nav navbar-nav navbar-right">
           <li><a href="#">Donate Now!</a></li>
+          <!--
           <li><a href="#"><i style="font-size: 20px; " class="fa fa-twitter"></i></a></li>
           <li><a href="#"><i style="font-size: 20px; " class="fa fa-facebook"></i></a></li>
           <li><a href="#"><i style="font-size: 20px; " class="fa fa-youtube"></i></a></li>
           <li><a href="#"><i style="font-size: 20px; " class="fa fa-linkedin"></i></a></li>
-        </ul>
-      </div><!--/.nav-collapse -->
-    </div><!--/.container-fluid -->
-  </div>
+        -->
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container-fluid -->
 </div>
 
 <div id="what" class="what">
@@ -287,76 +273,89 @@ function donate () {
 
   <div class="how" id="how">
 
+    <br/>
+
     <div class="jumbotron">
 
-    <!-- <div class="btn-group btn-group-justified">
-      <div class="btn-group"><button class="btn btn-default" type="button">How to Vote ?</button></div>
-      <div class="btn-group"><button class="btn btn-default" type="button">How to Donate ?</button></div>
-    </div> -->
+      <div class="">
+        <ul class="nav nav-tabs" role="tablist">
+          <li role="presentation" class="active" id="voteli"><a onclick="vote()">How to Vote?</a></li>
+          <li role="presentation" id="donateli"><a onclick="donate()">How to Donate?</a></li>
+        </ul>
+      </div>
 
-    <div class="">
-      <ul class="nav nav-tabs" role="tablist">
-        <li role="presentation" class="active" id="voteli"><a onclick="vote()">How to Vote?</a></li>
-        <li role="presentation" id="donateli"><a onclick="donate()">How to Donate?</a></li>
-      </ul>
+      <div class="">
+        <div class="" id="vote">
+          <li class="list-group-item">Voting would be captured through ERP</li>
+          <li class="list-group-item">An ERP link would be developed on profiles of all the potential passing out students to vote for their Class Gift</li>
+        </div>
+        <div id="donate">
+          <li class="list-group-item">Donations would be captured trough ERP</li>
+          <li class="list-group-item">An ERP link would be developed on profiles of all the potential passing out students to donate their caution money</li>
+        </div>
+      </div>
+
     </div>
 
-    <div class="">
-      <div class="" id="vote">
-        <li class="list-group-item">Voting would be captured through ERP</li>
-        <li class="list-group-item">An ERP link would be developed on profiles of all the potential passing out students to vote for their Class Gift</li>
+  </div><!-- HOW TO end -->
+
+
+  <div class="committee" id="committee">
+
+    <div class="jumbotron">
+      <h2 align="center">Mechanism to select Class Gift 2015</h2>
+
+      <div class="panel panel-default" align="center">
+        <div class="panel-body">
+          Committee members freeze 9 options for Class Gift, 3 options in each range
+        </div>
+
+        <span class="glyphicon glyphicon-arrow-down"></span>
+
+        <div class="panel-body">
+          These 9 options go to final year students for open voting
+        </div>
+
+        <span class="glyphicon glyphicon-arrow-down"></span>
+
+        <div class="panel-body">
+          Highest voted option in each range will be considered as anticipated Class Gift 2015
+        </div>
+
+        <span class="glyphicon glyphicon-arrow-down"></span>
+
+        <div class="panel-body">
+          At the end of the campaign, Class Gift 2015 would be decided based on the amount collected by the Graduating Batch and would be announced in Alvida in the month of April
+        </div>
       </div>
-      <div id="donate">
-        <li class="list-group-item">Donations would be captured trough ERP</li>
-        <li class="list-group-item">An ERP link would be developed on profiles of all the potential passing out students to donate their caution money</li>
-      </div>
+
     </div>
 
-  </div>
-
-</div><!-- HOW TO end -->
+  </div><!-- THE COMMITTEE end -->
 
 
-<div class="committee" id="committee">
+  <script src="https://code.jquery.com/jquery-1.10.2.min.js">
+  </script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js">
+  </script>
 
-  <div class="jumbotron">
-    <h2 align="center">Mechanism to select Class Gift 2015</h2>
+  <script type="text/javascript">
+  function vote () {
+    document.getElementById("donate").style.display = "none";
+    document.getElementById("vote").style.display = "inline";
+    $("#voteli").addClass("active");
+    $("#donateli").removeClass("active");
+  }
 
-    <div class="panel panel-default" align="center">
-      <div class="panel-body">
-        Committee members freeze 9 options for Class Gift, 3 options in each range
-      </div>
+  function donate () {
+    document.getElementById("vote").style.display = "none";
+    document.getElementById("donate").style.display = "inline";
+    $("#voteli").removeClass("active");
+    $("#donateli").addClass("active");
+  }
+  </script>
 
-      <span class="glyphicon glyphicon-arrow-down"></span>
-
-      <div class="panel-body">
-        These 9 options go to final year students for open voting
-      </div>
-
-      <span class="glyphicon glyphicon-arrow-down"></span>
-
-      <div class="panel-body">
-        Highest voted option in each range will be considered as anticipated Class Gift 2015
-      </div>
-
-      <span class="glyphicon glyphicon-arrow-down"></span>
-
-      <div class="panel-body">
-        At the end of the campaign, Class Gift 2015 would be decided based on the amount collected by the Graduating Batch and would be announced in Alvida in the month of April
-      </div>
-    </div>
-
-  </div>
-
-</div><!-- THE COMMITTEE end -->
-
-
-<script src="https://code.jquery.com/jquery-1.10.2.min.js">
-</script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js">
-</script>
-
-<script>
+  <script>
 
 // code for smooth scrolling when navigating within the page
 
