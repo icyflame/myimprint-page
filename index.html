@@ -96,6 +96,58 @@ img{
   display: none;
 }
 
+.entry-icon {
+  position: absolute;
+  display: block;
+  text-align: center;
+  top: 50%;
+  left: 0;
+  right: 0;
+  font-size: 4rem;
+  color: rgb(237,237,237);
+  text-shadow: 0 0 3rem rgba(0,0,0,.15);
+  opacity: 0;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  transform: translateY(-50%);
+  transition: opacity .2s linear;
+  transition-delay: 0.05s;
+ }
+ .entry-thumb {
+  position: relative;
+  display: block;
+  border-radius: 3px;
+ }
+ .entry-thumb img{
+  display: block;
+  width: 100%;
+  /*border: 1px solid #fff;*/
+  /*border-radius: 3px;*/
+  transition: opacity .2s linear;
+ }
+ .entry-thumb:hover img{
+  opacity: .55;
+ }
+ .entry-thumb:hover .entry-icon{
+  opacity: 1;
+ }
+
+ #micg {
+  /*border: 1px solid black;*/
+  background-color: rgb(237,237,237);
+  box-shadow: 1px 0px 2px 2px rgb(180,180,180);
+  padding: 20px;
+ }
+ .list-group-item{
+  margin-top: 15px;
+  box-shadow: 0px 0px 2px 2px rgb(180,180,180);
+  border-radius: 8px;
+ }
+ .thumbnail {
+  box-shadow: 0px 0px 2px 2px rgb(180,180,180);
+  border-radius: 8px;
+ }
+
 </style>
 
 </head>
@@ -139,7 +191,7 @@ img{
             </a>
           </li>
           <li>
-            <a href="#">Recognition
+            <a href="recognition">Recognition
             </a>
           </li>
         </ul>
@@ -222,143 +274,376 @@ img{
                 </div>
               </div>
             </div>
-          </div>
-
-          <div>
-            <div class="panel panel-default">
-              <div class="panel-heading">
-                <h3>Why your gifts matter, at a big institute like IIT Kharagpur?
-                </h3>
-              </div>
-              <div class="panel-body">
-                Many of us don't realize that government fund can never cover all of the IIT-KGP experience. If IIT-KGP wants to start a new pre-professional program, support an innovative student project, or expand student life opportunities, philanthropy makes it possible.
-              </div>
-            </div>
-          </div>
-
         </div>
-      </div>
-    </div>
 
-  </div><!-- WHY end -->
-
-  <div id="options" class="options">
-
-    <div class="jumbotron">
-      <h2>Options of Class Gift 2015</h2>
-      <div class="cointainer">
-        <div class="row">
-          <div class="col-md-4">
-            <div class="panel panel-default panel-danger">
-              <div class="panel-heading">
-                <h3>Option 1 Title
-                </h3>
-              </div>
-              <div class="panel-body">
-                300-400 Sign up's <br/> <br/>
-                <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#modal-option-1">
-                  Learn More
-                </button>
-              </div>
+        <div>
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h3>Why your gifts matter, at a big institute like IIT Kharagpur?
+              </h3>
             </div>
-          </div>
-
-          <div class="col-md-4">
-            <div class="panel panel-default panel-info">
-              <div class="panel-heading">
-                <h3>Option 2 Title
-                </h3>
-              </div>
-              <div class="panel-body">
-                About 500 Sign up's <br/> <br/>
-                <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#modal-option-2">
-                  Learn More
-                </button>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-4">
-            <div class="panel panel-default panel-success">
-              <div class="panel-heading">
-                <h3>Option 3 Title <span class="label label-primary">Popular</span>
-                </h3>
-              </div>
-              <div class="panel-body">
-                600+ Sign up's <br/> <br/>
-                <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#modal-option-3">
-                  Learn More
-                </button>
-              </div>
+            <div class="panel-body">
+              Many of us don't realize that government fund can never cover all of the IIT-KGP experience. If IIT-KGP wants to start a new pre-professional program, support an innovative student project, or expand student life opportunities, philanthropy makes it possible.
             </div>
           </div>
         </div>
+
+      </div>
+    </div>
+  </div>
+
+</div><!-- WHY end -->
+
+<div id="options" class="options">
+
+  <div class="jumbotron">
+    <h2>Options of Class Gift 2015</h2>
+    <div class="cointainer">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="panel panel-default panel-danger">
+            <div class="panel-heading">
+              <h3>Option 1 Title
+              </h3>
+            </div>
+            <div class="panel-body">
+              300-400 Sign up's <br/> <br/>
+              <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#modal-option-1">
+                Learn More
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="panel panel-default panel-info">
+            <div class="panel-heading">
+              <h3>Option 2 Title
+              </h3>
+            </div>
+            <div class="panel-body">
+              About 500 Sign up's <br/> <br/>
+              <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#modal-option-2">
+                Learn More
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="panel panel-default panel-success">
+            <div class="panel-heading">
+              <h3>Option 3 Title <span class="label label-primary">Popular</span>
+              </h3>
+            </div>
+            <div class="panel-body">
+              600+ Sign up's <br/> <br/>
+              <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#modal-option-3">
+                Learn More
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div><!-- OPTIONS end -->
+
+<div class="how" id="how">
+
+  <br/>
+
+  <div class="jumbotron">
+
+    <div class="">
+      <ul class="nav nav-tabs" role="tablist">
+        <li role="presentation" class="active" id="voteli"><a onclick="vote()">How to Vote?</a></li>
+        <li role="presentation" id="donateli"><a onclick="donate()">How to Donate?</a></li>
+      </ul>
+    </div>
+
+    <div class="">
+      <div class="" id="vote">
+        <li class="list-group-item">Voting would be captured through ERP</li>
+        <li class="list-group-item">An ERP link would be developed on profiles of all the potential passing out students to vote for their Class Gift</li>
+      </div>
+      <div id="donate">
+        <li class="list-group-item">Donations would be captured trough ERP</li>
+        <li class="list-group-item">An ERP link would be developed on profiles of all the potential passing out students to donate their caution money</li>
       </div>
     </div>
 
-  </div><!-- OPTIONS end -->
+  </div>
 
-  <div class="how" id="how">
+</div><!-- HOW TO end -->
 
-    <br/>
 
-    <div class="jumbotron">
+<div class="committee" id="committee">
 
-      <div class="">
-        <ul class="nav nav-tabs" role="tablist">
-          <li role="presentation" class="active" id="voteli"><a onclick="vote()">How to Vote?</a></li>
-          <li role="presentation" id="donateli"><a onclick="donate()">How to Donate?</a></li>
-        </ul>
+  <div class="jumbotron">
+    <h2 align="center">Mechanism to select Class Gift 2015</h2>
+
+    <div class="panel panel-default" align="center">
+      <div class="panel-body">
+        Committee members freeze 9 options for Class Gift, 3 options in each range
       </div>
 
-      <div class="">
-        <div class="" id="vote">
-          <li class="list-group-item">Voting would be captured through ERP</li>
-          <li class="list-group-item">An ERP link would be developed on profiles of all the potential passing out students to vote for their Class Gift</li>
+      <span class="glyphicon glyphicon-arrow-down"></span>
+
+      <div class="panel-body">
+        These 9 options go to final year students for open voting
+      </div>
+
+      <span class="glyphicon glyphicon-arrow-down"></span>
+
+      <div class="panel-body">
+        Highest voted option in each range will be considered as anticipated Class Gift 2015
+      </div>
+
+      <span class="glyphicon glyphicon-arrow-down"></span>
+
+      <div class="panel-body">
+        At the end of the campaign, Class Gift 2015 would be decided based on the amount collected by the Graduating Batch and would be announced in Alvida in the month of April
+      </div>
+    </div>
+
+    <h2 align="center">MICGC <small>( My Imprint Class Gift Committee )</small> </h2>
+
+    <div id="micg">
+
+      <div class="row">
+        <div class="col-md-6">
+          <div class="thumbnail entry-thumb">
+            <img src="dp.jpg">
+            <div class="caption entry-icon">
+              Vice President, Gymkhana
+            </div>
+          </div>
         </div>
-        <div id="donate">
-          <li class="list-group-item">Donations would be captured trough ERP</li>
-          <li class="list-group-item">An ERP link would be developed on profiles of all the potential passing out students to donate their caution money</li>
+
+        <div class="col-md-6">
+          <div class="thumbnail entry-thumb">
+            <img src="dp.jpg">
+            <div class="caption entry-icon">
+              ID Reprentative
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <h3 align="center">Elected Student Representative</h3>
+        <div class="col-md-4">
+          <div class="thumbnail entry-thumb">
+            <img src="dp.jpg">
+            <div class="caption entry-icon">
+              UG Rep
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="thumbnail entry-thumb">
+            <img src="dp.jpg">
+            <div class="caption entry-icon">
+              PG Rep
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="thumbnail entry-thumb">
+            <img src="dp.jpg">
+            <div class="caption entry-icon">
+              RS Rep
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <!-- <h3>Elected Student Representative</h3> -->
+        <div class="col-md-4">
+          <div class="thumbnail entry-thumb">
+            <img src="dp.jpg">
+            <div class="caption entry-icon">
+              Ex-VP, Gymkhana
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="thumbnail entry-thumb">
+            <img src="dp.jpg">
+            <div class="caption entry-icon">
+              Students Alumni Cell G-Secs
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="thumbnail entry-thumb">
+            <img src="dp.jpg">
+            <div class="caption entry-icon">
+              Students Alumni Cell Ex G-Secs
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <h3 align="center">Hall Presidents</h3>
+        <div class="col-md-2"><!-- 1st row -->
+          <ul class="list-group">
+            <li class="list-group-item">
+              <img src="dp.jpg" height="64px" width="64px">
+              <span class="badge">Name <br> Hall</span>
+            </li>
+
+            <li class="list-group-item">
+              <img src="dp.jpg" height="64px" width="64px">
+              <span class="badge">Name <br> Hall</span>
+            </li>
+
+            <li class="list-group-item">
+              <img src="dp.jpg" height="64px" width="64px">
+              <span class="badge">Name <br> Hall</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="col-md-2"><!-- 2nd row -->
+          <ul class="list-group">
+            <li class="list-group-item">
+              <img src="dp.jpg" height="64px" width="64px">
+              <span class="badge">Name <br> Hall</span>
+            </li>
+
+            <li class="list-group-item">
+              <img src="dp.jpg" height="64px" width="64px">
+              <span class="badge">Name <br> Hall</span>
+            </li>
+
+            <li class="list-group-item">
+              <img src="dp.jpg" height="64px" width="64px">
+              <span class="badge">Name <br> Hall</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="col-md-2"><!-- 3rd row -->
+          <ul class="list-group">
+            <li class="list-group-item">
+              <img src="dp.jpg" height="64px" width="64px">
+              <span class="badge">Name <br> Hall</span>
+            </li>
+
+            <li class="list-group-item">
+              <img src="dp.jpg" height="64px" width="64px">
+              <span class="badge">Name <br> Hall</span>
+            </li>
+
+            <li class="list-group-item">
+              <img src="dp.jpg" height="64px" width="64px">
+              <span class="badge">Name <br> Hall</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="col-md-2"><!-- 4th row -->
+          <ul class="list-group">
+            <li class="list-group-item">
+              <img src="dp.jpg" height="64px" width="64px">
+              <span class="badge">Name <br> Hall</span>
+            </li>
+
+            <li class="list-group-item">
+              <img src="dp.jpg" height="64px" width="64px">
+              <span class="badge">Name <br> Hall</span>
+            </li>
+
+            <li class="list-group-item">
+              <img src="dp.jpg" height="64px" width="64px">
+              <span class="badge">Name <br> Hall</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="col-md-2"><!-- 5th row -->
+          <ul class="list-group">
+            <li class="list-group-item">
+              <img src="dp.jpg" height="64px" width="64px">
+              <span class="badge">Name <br> Hall</span>
+            </li>
+
+            <li class="list-group-item">
+              <img src="dp.jpg" height="64px" width="64px">
+              <span class="badge">Name <br> Hall</span>
+            </li>
+
+            <li class="list-group-item">
+              <img src="dp.jpg" height="64px" width="64px">
+              <span class="badge">Name <br> Hall</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="col-md-2"><!-- 6th row -->
+          <ul class="list-group">
+            <li class="list-group-item">
+              <img src="dp.jpg" height="64px" width="64px">
+              <span class="badge">Name <br> Hall</span>
+            </li>
+
+            <li class="list-group-item">
+              <img src="dp.jpg" height="64px" width="64px">
+              <span class="badge">Name <br> Hall</span>
+            </li>
+
+            <li class="list-group-item">
+              <img src="dp.jpg" height="64px" width="64px">
+              <span class="badge">Name <br> Hall</span>
+            </li>
+          </ul>
         </div>
       </div>
 
     </div>
 
-  </div><!-- HOW TO end -->
+  </div>
 
+</div><!-- THE COMMITTEE end -->
 
-  <div class="committee" id="committee">
+<div class="recognition" id="recognition">
 
-    <div class="jumbotron">
-      <h2 align="center">Mechanism to select Class Gift 2015</h2>
-
-      <div class="panel panel-default" align="center">
-        <div class="panel-body">
-          Committee members freeze 9 options for Class Gift, 3 options in each range
-        </div>
-
-        <span class="glyphicon glyphicon-arrow-down"></span>
-
-        <div class="panel-body">
-          These 9 options go to final year students for open voting
-        </div>
-
-        <span class="glyphicon glyphicon-arrow-down"></span>
-
-        <div class="panel-body">
-          Highest voted option in each range will be considered as anticipated Class Gift 2015
-        </div>
-
-        <span class="glyphicon glyphicon-arrow-down"></span>
-
-        <div class="panel-body">
-          At the end of the campaign, Class Gift 2015 would be decided based on the amount collected by the Graduating Batch and would be announced in Alvida in the month of April
+  <div class="jumbotron">
+    <div class="container">
+      <div class="col-md-6">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h3 class="panel-title">DONOR RECOGNITION</h3>
+          </div>
+          <div class="panel-body">
+            We are planning to recognize all the My Imprint Donors with Class Gift 2015 T-shirts
+          </div>
         </div>
       </div>
 
+      <div class="col-md-6">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h3 class="panel-title">ALUMNI SERVICES</h3>
+          </div>
+          <div class="panel-body">
+            Alumni Card and Yearbook 2015
+          </div>
+        </div>
+      </div>
     </div>
+  </div>
 
-  </div><!-- THE COMMITTEE end -->
+</div><!-- THE RECOGNITION end -->
 
   <!-- Modals Begin -->
 
