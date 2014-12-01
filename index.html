@@ -1,11 +1,11 @@
-<!DOCTYPE html>
+  <!DOCTYPE html>
 <html>
   <head>
     <title>
       Senior Class Gift 2015 - IIT Kharagpur
     </title>
     <link href=
-    "https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"
+    "css/bootstrap.min.css"
     rel="stylesheet">
     <!-- <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/bootstrap.material-design/0.1.5/css/material.min.css">  -->
     <!--<script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
@@ -15,8 +15,7 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/bootstrap.material-design/0.1.5/css/ripples.min.css"> 
   <script src="https://cdn.jsdelivr.net/bootstrap.material-design/0.1.5/js/material.min.js"></script>
   <script src="https://cdn.jsdelivr.net/bootstrap.material-design/0.1.5/js/ripples.min.js"></script> -->
-    <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'
-    type='text/css'>
+    <link href='css/roboto.css' rel='stylesheet'    type='text/css'>
     <link href='fonts/font.css' rel='stylesheet'><!--
  <link href="css/ripples.min.css" rel="stylesheet">
  <link href="css/material.min.css" rel="stylesheet">
@@ -188,6 +187,15 @@
     background-color: white;
     color: rgb(216,165,11);
     }
+    #btn-vote{
+    background-color: rgb(216,165,11); 
+    color: white;
+    }
+
+    #btn-vote:hover{
+    background-color: white;
+    color: rgb(216,165,11);
+    }
 
     .item img{
     width: 480px;
@@ -209,11 +217,25 @@
       background-color: rgb(216,165,11);
       color:white;
     }
-    .thumbnail{
-      /*height:20%;
-      width:60%;*/
+   .navbar-fixed-top{
+    border-bottom: 2px solid rgb(216,165,11);
+   }
+
+    h3{
+      text-align: center !important;
     }
+   img{
+    -webkit-border-radius: 20px;
+   }
+   div[class = "col-md-4"] img{
+    width : 250px;
+    height : 260px;
+   }
+   h4{
+    text-align: justify;
+   }
     </style>
+    <script type="text/javascript" src = "js/simpleslider.js"></script>
   </head>
   <body>
     <br>
@@ -262,7 +284,7 @@
 
           <ul class="social-icons nav navbar-nav navbar-right">
             <li>
-              <a href="#" id="btn-donate">Vote Now!</a>
+              <a href="http://webteam.iitkgp.ernet.in/scgchoice/" id="btn-vote">Vote Now!</a>
             </li>
              <li>
               <a href="#" id="btn-donate">Donate Now!</a>
@@ -429,12 +451,12 @@ border-radius: 20px;">
                     <div class="panel panel-default panel-danger">
                       <div class="panel-heading">
                         <h3>
-                          Option 1 Title
+                          Campus Benches
                         </h3>
                       </div>
 
                       <div class="panel-body" style="text-align: center;">
-                        <img src="http://lorempixel.com/200/200">
+                        <img src="images/bench.jpg" id = "bench">
                         <button class="btn btn-primary btn-lg" data-target=
                         "#modal-option-1" data-toggle="modal" type=
                         "button">Learn More</button>
@@ -446,12 +468,12 @@ border-radius: 20px;">
                     <div class="panel panel-default panel-info">
                       <div class="panel-heading">
                         <h3>
-                          Option 2 Title
+                          Bus Stand
                         </h3>
                       </div>
 
                       <div class="panel-body" style="text-align: center;">
-                        <img src="http://lorempixel.com/200/200">
+                        <img src="images/busstand.jpg">
                         <button class="btn btn-primary btn-lg" data-target=
                         "#modal-option-2" data-toggle="modal" type=
                         "button">Learn More</button>
@@ -463,13 +485,12 @@ border-radius: 20px;">
                     <div class="panel panel-default panel-success">
                       <div class="panel-heading">
                         <h3>
-                          Option 3 Title <span class=
-                          "label label-primary">Popular</span>
+                          Library Section for Literary Fiction 
                         </h3>
                       </div>
 
                       <div class="panel-body" style="text-align: center;">
-                        <img src="http://lorempixel.com/200/200">
+                        <img src="images/litsection.jpg">
                         <button class="btn btn-primary btn-lg" data-target=
                         "#modal-option-3" data-toggle="modal" type=
                         "button">Learn More</button>
@@ -487,12 +508,12 @@ border-radius: 20px;">
                     <div class="panel panel-default panel-danger">
                       <div class="panel-heading">
                         <h3>
-                          Option 1 Title
+                          Grand Pillar Clock
                         </h3>
                       </div>
 
                       <div class="panel-body" style="text-align: center;">
-                        <img src="http://lorempixel.com/200/200">
+                        <img src="images/dummy.jpg">
                         <button class="btn btn-primary btn-lg" data-target=
                         "#modal-option-4" data-toggle="modal" type=
                         "button">Learn More</button>
@@ -504,12 +525,12 @@ border-radius: 20px;">
                     <div class="panel panel-default panel-info">
                       <div class="panel-heading">
                         <h3>
-                          Option 2 Title
+                          Water Fountain
                         </h3>
                       </div>
 
                       <div class="panel-body" style="text-align: center;">
-                        <img src="http://lorempixel.com/200/200">
+                        <img src="images/dummy.jpg">
                         <button class="btn btn-primary btn-lg" data-target=
                         "#modal-option-5" data-toggle="modal" type=
                         "button">Learn More</button>
@@ -521,13 +542,12 @@ border-radius: 20px;">
                     <div class="panel panel-default panel-success">
                       <div class="panel-heading">
                         <h3>
-                          Option 3 Title <span class=
-                          "label label-primary">Popular</span>
+                          Science Center
                         </h3>
                       </div>
 
                       <div class="panel-body" style="text-align: center;">
-                        <img src="http://lorempixel.com/200/200">
+                        <img src="images/science.jpg">
                         <button class="btn btn-primary btn-lg" data-target=
                         "#modal-option-6" data-toggle="modal" type=
                         "button">Learn More</button>
@@ -545,13 +565,13 @@ border-radius: 20px;">
                     <div class="panel panel-default panel-danger">
                       <div class="panel-heading">
                         <h3>
-                          Option 1 Title
+                          Art Gallery
                         </h3>
                       </div>
 
                       <div class="panel-body" style="text-align: center;">
                         
-                        <img src="http://lorempixel.com/200/200">
+                        <img src="images/gallery.jpg">
                         <button class="btn btn-primary btn-lg" data-target=
                         "#modal-option-7" data-toggle="modal" type=
                         "button">Learn More</button>
@@ -563,13 +583,13 @@ border-radius: 20px;">
                     <div class="panel panel-default panel-info">
                       <div class="panel-heading">
                         <h3>
-                          Option 2 Title
+                          Celebration Center
                         </h3>
                       </div>
 
                       <div class="panel-body" style="text-align: center;">
                         
-                        <img src="http://lorempixel.com/200/200">
+                        <img src="images/dummy.jpg">
                         <button class="btn btn-primary btn-lg" data-target=
                         "#modal-option-8" data-toggle="modal" type=
                         "button">Learn More</button>
@@ -581,14 +601,13 @@ border-radius: 20px;">
                     <div class="panel panel-default panel-success">
                       <div class="panel-heading">
                         <h3>
-                          Option 3 Title <span class=
-                          "label label-primary">Popular</span>
+                          Music Recording Studio 
                         </h3>
                       </div>
 
                       <div class="panel-body" style="text-align: center;">
                         
-                        <img src="http://lorempixel.com/200/200">
+                        <img src="images/dummy.jpg">
                         <button class="btn btn-primary btn-lg" data-target=
                         "#modal-option-9" data-toggle="modal" type=
                         "button">Learn More</button>
@@ -669,7 +688,7 @@ border-radius: 20px;">
 
                 <div class="col-md-4">
                   <div class="thumbnail entry-thumb">
-                    <img src="images/manish.jpg">
+                    <img src="dp.jpg" width = "250px" height = "280px">
                     <div class="caption entry-icon">
                       Students' Alumni Cell G-Sec 
                     </div>
@@ -678,7 +697,7 @@ border-radius: 20px;">
 
                 <div class="col-md-4">
                   <div class="thumbnail entry-thumb">
-                    <img src="images/arpit.jpg">
+                    <img src="dp.jpg" width = "250px" height = "280px">
                     <div class="caption entry-icon">
                       Students' Alumni Cell G-Sec 
                     </div>
@@ -687,7 +706,7 @@ border-radius: 20px;">
 
                 <div class="col-md-4">
                   <div class="thumbnail entry-thumb">
-                    <img src="images/punj.jpg">
+                    <img src="dp.jpg" width = "250px" height = "280px">
                     <div class="caption entry-icon">
                       Vice President, Gymkhana
                     </div>
@@ -698,7 +717,7 @@ border-radius: 20px;">
 
                 <div class="col-md-4">
                   <div class="thumbnail entry-thumb">
-                    <img src="images/apoorv.jpg">
+                    <img src="dp.jpg">
                     <div class="caption entry-icon">
                       Ex-VP, Gymkhana
                     </div>
@@ -707,7 +726,7 @@ border-radius: 20px;">
              
                 <div class="col-md-4">
                   <div class="thumbnail entry-thumb">
-                    <img src="images/aditi.jpg">
+                    <img src="dp.jpg">
                     <div class="caption entry-icon">
                       Ex-SAC G-Sec
                     </div>
@@ -716,7 +735,7 @@ border-radius: 20px;">
 
                 <div class="col-md-4">
                   <div class="thumbnail entry-thumb">
-                    <img src="images/vedang.jpg">
+                    <img src="dp.jpg">
                     <div class="caption entry-icon">
                       Ex-SAC G-Sec
                     </div>
@@ -773,7 +792,8 @@ border-radius: 20px;">
 
                     <li class="list-group-item">
                       <img height="64px" src="dp.jpg" width="64px">
-                     
+                      <span class="badge">Name<br>
+                      Hall</span>
                     </li>
 
                     <li class="list-group-item">
@@ -983,37 +1003,25 @@ border-radius: 20px;">
               <div class="col-md-12">
                 <div class="panel panel-default">
                   <div class="panel-heading">
-                    <h3 class="panel-title" style = "text-align:center">
+                    <h3  style = "text-align:center">
                       70% of Class of 2014 voted for the gift and close to 350 students contributed their caution money.
                     </h3>
+                    <h3>Some of the initiatives under My Imprint Program to support students' services are</h3>
                   </div>
 
                   <div class="panel-body">
                     <div class = "row">
                       <div class = "col-md-4">
-                        <h3>  Team Changemakers - Hult Prize 2013 at San Francisco</h3>
+                        <img src="images/hult.jpg">
+                        <h4>  Team Changemakers - Hult Prize 2013 at San Francisco</h4>
                       </div>
                       <div class = "col-md-4">
-                        <h3> Team AGV - Intelligent Ground Vehicle Competition 2013 at Michigan</h3>
+                        <img src="images/agv.jpg">
+                        <h4> Team AGV - Intelligent Ground Vehicle Competition 2013 at Michigan</h4>
                       </div>
                       <div class = "col-md-4">
-                        <h3> RoboSoccer Team - FIRA World Cup 2013 at Kuala Lumpur, Malaysia</h3>
-                      </div>
-
-
-
-
-
-                    </div>
-                    <div class = "row">
-                      <div class = "col-md-4">
-                        <h3>International SME Student Design Competition 2013 at Seattle</h3>
-                      </div>
-                      <div class = "col-md-4">
-                        <h3>Support for competition at Windsor University, Canada</h3>
-                      </div>
-                      <div class = "col-md-4">
-                        <h3>National Moot Court Competition on Human Rights</h3>
+                        <img src="images/robosoccer.jpg">
+                        <h4> RoboSoccer Team - FIRA World Cup 2013 at Kuala Lumpur, Malaysia</h4>
                       </div>
 
 
@@ -1021,16 +1029,40 @@ border-radius: 20px;">
 
 
                     </div>
+                    <hr>
                     <div class = "row">
                       <div class = "col-md-4">
-                        <h3>Clinton Global Initiative (CGI) 2013 at University of Washington, St Louis</h3>
+                        <img src="images/sme.jpg">
+                        <h4>International SME Student Design Competition 2013 at Seattle</h4>
                       </div>
                       <div class = "col-md-4">
-                        <h3>Students’ Innovation Pavilion in GRIFTECH 2013</h3>
+                        <img src="images/u.png">
+                        <h4>Support for competition at Windsor University, Canada</h4>
+                      </div>
+                      <div class = "col-md-4">
+                        <img src="images/moot.png">
+                        <h4>National Moot Court Competition on Human Rights</h4>
+                      </div>
+
+
+
+
+
+                    </div>
+                    <hr>
+                    <div class = "row">
+                      <div class = "col-md-4">
+                        <img src="images/w.jpg">
+                        <h4>Clinton Global Initiative (CGI) 2013 at University of Washington, St Louis</h4>
+                      </div>
+                      <div class = "col-md-4">
+                        <img src="images/griftech-logo.jpg">
+                        <h4>Students' Innovation Pavilion in GRIFTECH 2013</h4>
 
                       </div>
                       <div class = "col-md-4">
-                        <h3>Team KART - SAE Formula 1 Competition at UK</h3>
+                        <img src="images/kart.jpg">
+                        <h4>Team KART - SAE Formula 1 Competition at UK</h4>
 
                       </div>
 
@@ -1067,6 +1099,40 @@ border-radius: 20px;">
 
            </div>
           </p>
+          <br>          <br/> <br/> <br/><br/> <br/> <br/><br/> <br/> <br/><br/> <br/> <br/><br/> <br/> <br/>
+          <br/>
+          <br/>
+          <br/>
+          <br>
+          <br>
+          <p align="center">
+           <div class = "row">
+            <div class="panel panel-default">
+               <div class="panel-body" style = "background-color:rgb(216,165,11)">
+
+               You're graduating. Although you are going to miss different parts of your time in KGP - be it taking a stroll in Scholars' Avenue or going to 'Chhedis' at dusk or mugging whole night before the exams -there have been commonalities that unite you. Some sort of "KGPian-ness"
+               </div>
+            </div>
+
+           </div>
+           <br/>          <br/> <br/> <br/><br/> <br/> <br/><br/> <br/> <br/><br/> <br/> <br/><br/> <br/> <br/>
+          <br/>
+          <br/>
+          </p>
+          <br>
+          <br>
+          <br>
+          <p align="center">
+           <div class = "row">
+            <div class="panel panel-default">
+               <div class="panel-body" style = "background-color:rgb(216,165,11)">
+
+              You will not share the campus with the incoming classes of IIT-KGP, but you will certainly want them to have access to the same variety of KGP experiences as you did. The Senior Class Gift, supported by the graduating class marks the first step for you to give back.
+               </div>
+            </div>
+
+           </div>
+          </p>
         </div>
       </div>
     </div>
@@ -1087,20 +1153,13 @@ border-radius: 20px;">
             "button"><span>&times;</span><span class=
             "sr-only">Close</span></button>
             <h4 class="modal-title" id="modal-option-1Label" style=
-            "text-align: center;">
-              Option 1 Title
+            "text-align: center">
+             Campus Benches
             </h4>
           </div>
 
           <div class="modal-body">
-            More about the option.<br>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum.
+            The class can donate 10 stone and wood benches placed throughout 2.2. Designed to be permanent fixtures, this will look elegant and prominent all around 2.2
           </div>
 
           <div class="modal-footer">
@@ -1120,19 +1179,13 @@ border-radius: 20px;">
             "sr-only">Close</span></button>
             <h4 class="modal-title" id="modal-option-1Label" style=
             "text-align: center;">
-              Option 2 Title
+             Bus Stands
             </h4>
           </div>
 
           <div class="modal-body">
-            More about the option.<br>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum.
+           This can be the most useful option for students. This will be designed in a manner to have facilitation for branding and promotion.
+Minimum 10 stands would be required all around the campus
           </div>
 
           <div class="modal-footer">
@@ -1152,19 +1205,12 @@ border-radius: 20px;">
             "sr-only">Close</span></button>
             <h4 class="modal-title" id="modal-option-1Label" style=
             "text-align: center;">
-              Option 3 Title
+              Literary Section
             </h4>
           </div>
 
           <div class="modal-body">
-            More about the option.<br>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum.
+           New library shelves dedicated to literary fiction (shelves along with books as class gift)
           </div>
 
           <div class="modal-footer">
@@ -1184,19 +1230,12 @@ border-radius: 20px;">
             "sr-only">Close</span></button>
             <h4 class="modal-title" id="modal-option-1Label" style=
             "text-align: center;">
-              Option 4 Title
+              Grand Pillar Clock
             </h4>
           </div>
 
           <div class="modal-body">
-            More about the option.<br>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum.
+            Class may gift this unique Street Clock, preferably on Gol Chakkar “Tikka” , which will be recognized as a landmark for 2015 Batch and will become  a historical monument in coming years.
           </div>
 
           <div class="modal-footer">
@@ -1216,19 +1255,12 @@ border-radius: 20px;">
             "sr-only">Close</span></button>
             <h4 class="modal-title" id="modal-option-1Label" style=
             "text-align: center;">
-              Option 5 Title
+              Water Fountain
             </h4>
           </div>
 
           <div class="modal-body">
-            More about the option.<br>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum.
+           A water fountain with 2015 placed on top of a stone/marble structure in the middle of it
           </div>
 
           <div class="modal-footer">
@@ -1248,19 +1280,14 @@ border-radius: 20px;">
             "sr-only">Close</span></button>
             <h4 class="modal-title" id="modal-option-1Label" style=
             "text-align: center;">
-              Option 6 Title
+              Science Center
             </h4>
           </div>
 
           <div class="modal-body">
-            More about the option.<br>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum.
+            A centre for preservation of innovative projects undertaken by KGPians (Tech GC in particular).<br>
+
+            We see a lot of innovative ideas come to reality in various Tech Events throughout the year. Most of these ideas go unharnessed and are lost in the sands of time. The main aim is to preserve as well as show case the talent in research and help them in recognition via patent.
           </div>
 
           <div class="modal-footer">
@@ -1280,19 +1307,13 @@ border-radius: 20px;">
             "sr-only">Close</span></button>
             <h4 class="modal-title" id="modal-option-1Label" style=
             "text-align: center;">
-              Option 7 Title
+              Art Gallery
             </h4>
           </div>
 
           <div class="modal-body">
-            More about the option.<br>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum.
+           KGP Campus is flooded with artistic talent but no place to preserve it and showcase it for the long. The batch can  come up with the set up of Art Gallery which would provide a platform to showcase talents related to arts, paintings, photos and other innovation
+
           </div>
 
           <div class="modal-footer">
@@ -1312,19 +1333,12 @@ border-radius: 20px;">
             "sr-only">Close</span></button>
             <h4 class="modal-title" id="modal-option-1Label" style=
             "text-align: center;">
-              Option 8 Title
+              Celebration Center
             </h4>
           </div>
 
           <div class="modal-body">
-            More about the option.<br>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum.
+           A celebration centre where students can celebrate birthdays, etc (should have necessary facilities)
           </div>
 
           <div class="modal-footer">
@@ -1344,19 +1358,12 @@ border-radius: 20px;">
             "sr-only">Close</span></button>
             <h4 class="modal-title" id="modal-option-1Label" style=
             "text-align: center;">
-              Option 9 Title
+            Music Recording Studio
             </h4>
           </div>
 
           <div class="modal-body">
-            More about the option.<br>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum.
+            It would be the most desirable gift for the students passionate for music. Also it can be used for Institute recording projects.
           </div>
 
           <div class="modal-footer">
